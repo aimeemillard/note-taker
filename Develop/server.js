@@ -1,9 +1,11 @@
 const express = require("express");
+const fs = require("fs");
 //any other required goes here
+const path = require("path");
 
 // Initialize the app and create a port
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Set up body parsing, static, and route middleware
 app.use(express.json());
